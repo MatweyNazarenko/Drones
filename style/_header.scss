@@ -1,0 +1,51 @@
+header{
+    background: #151515;
+    padding-top: 3px;
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__left{
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            .tel{
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+        &__right{
+            display: flex;
+            align-items: center;
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 22px; 
+            }
+            .langBar{
+                margin: 0 51px 0 71px;
+                display: flex;
+                align-items: center;
+                gap: 17px;
+                button{
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+            }
+            .menu{
+                display: flex;
+                align-items: center;
+                gap: 22px;
+            }
+        }
+
+    }
+}

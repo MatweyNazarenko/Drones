@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('../fonts/RFRufo-Regular.eot');
+    src: local('../fonts/RFRufo-Regular'), local('RFRufo-Regular'),
+        url('../fonts/RFRufo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFRufo-Regular.woff2') format('woff2'),
+        url('../fonts/RFRufo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('../fonts/RFRufo-Bold.eot');
+    src: local('../fonts/RFRufo-Bold'), local('RFRufo-Regular'),
+        url('../fonts/RFRufo-Bold?#iefix') format('embedded-opentype'),
+        url('../fonts/RFRufo-Bold.woff2') format('woff2'),
+        url('../fonts/RFRufo-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('../fonts/RFRufo-Light.eot');
+    src: local('../fonts/RFRufo-Light'), local('RFRufo-Regular'),
+        url('../fonts/RFRufo-Light?#iefix') format('embedded-opentype'),
+        url('../fonts/RFRufo-Light.woff2') format('woff2'),
+        url('../fonts/RFRufo-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
