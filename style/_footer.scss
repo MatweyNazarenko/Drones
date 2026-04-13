@@ -39,3 +39,20 @@ footer{
         }
     }
 }
+@media (max-width:768px){
+    footer{
+        .footer{
+            &__right{
+                ul{
+                    li{
+                        a{
+                            img{
+                                width: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

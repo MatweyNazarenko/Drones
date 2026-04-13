@@ -49,3 +49,30 @@ header{
 
     }
 }
+@media (max-width:768px){
+    header{
+        .header{
+            &__right{
+                ul{
+                    li{
+                        a{
+                            img{
+                                width: 30px;
+                            }
+                        }
+                    }
+                }
+                .langBar{
+                    margin: 0 38px 0 32px;
+                }
+                .menu{
+                    button{
+                        img{
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
