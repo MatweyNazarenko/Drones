@@ -56,3 +56,33 @@ footer{
         }
     }
 }
+@media(max-width:320px){
+    footer{
+        padding: 16px 0 50px 0;
+        .footer{
+            flex-direction: column;
+            gap: 20px;
+            &__left{
+                flex-direction: column;
+                gap: 4px;
+                .logo{
+                    img{
+                        width: 110px;
+                    }
+                }
+            }
+            &__right{
+                p{
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 100%;
+                    color: #fff;
+                }
+                gap: 30px;
+                flex-direction: column;
+            }
+            
+        }
+    }
+}

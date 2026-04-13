@@ -44,6 +44,9 @@ header{
                 display: flex;
                 align-items: center;
                 gap: 22px;
+                .phone{
+                    display: none;
+                }
             }
         }
 
@@ -70,6 +73,54 @@ header{
                         img{
                             width: 30px;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 320px){
+    header{
+        .header{
+            &__left{
+                .logo{
+                    width: 33px;
+                }
+                .tel{
+                    display: none;
+                }
+            }
+            &__right{
+                ul{
+                    gap: 7px;
+                    li{
+                        a{
+                            img{
+                                width: 20px;
+                            }
+                        }
+                    }
+                }
+                .langBar{
+                    margin: 0 12px;
+                    gap: 7px;
+                    button{
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        color: #fff;
+                    }
+                }
+                .menu{
+                    gap: 10px;
+                    button{
+                        img{
+                            width: 20px;
+                        }
+                    }
+                    .phone{
+                        display: flex;
                     }
                 }
             }
