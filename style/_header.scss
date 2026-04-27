@@ -47,6 +47,55 @@ header{
                 .phone{
                     display: none;
                 }
+                .btnMenu{
+                    position: relative;
+                    .pages{
+                        display: none;
+                        z-index: 100;
+                        left: -238px;
+                        min-width: 271px;
+                        padding: 17px 0 44px 0;
+                        background: rgba(24, 24, 24, 0.95);
+                        position: absolute;
+                        flex-direction: column;
+                        gap: 30px;
+                        margin-top: 10px;
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: -20px;
+                            align-items: start;
+                            li{
+                                a{
+                                    font-family: var(--font-family);
+                                    font-weight: 400;
+                                    font-size: 24px;
+                                    line-height: 100%;
+                                    color: #fff;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: start;
+                                    gap: 8px;
+                                }
+                            }
+                        }
+                        .line{
+                            margin-left: 23px;
+                            display: flex;
+                            justify-content: center;
+                            width: 227px;
+                            height: 2px;
+                            background-color: #fff;
+                        }
+                        .media{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 24px;
+                        }
+                    }
+                
+                }
             }
         }
 
@@ -122,6 +171,36 @@ header{
                     .phone{
                         display: flex;
                     }
+                    .btnMenu{
+                        .pages{
+                        margin-top: 5px;
+                        left: -161px;
+                        min-width: 181px;
+                        ul{
+                            margin-left: -10px;
+                            li{
+                                a{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                        .line{
+                            margin-left: 34px;
+                            display: flex;
+                            justify-content: center;
+                            width: 110px;
+                            height: 2px;
+                            background-color: #fff;
+                        }
+                        .media{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 24px;
+                        }
+                    }
+                
+                }
                 }
             }
         }

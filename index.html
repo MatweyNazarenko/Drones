@@ -27,7 +27,27 @@
                     <div class="langBar"><button>en</button><button>ru</button></div>
                     <div class="menu">
                         <button><img src="img/basket.svg" alt="basket"></button>
-                        <button><img src="img/menu.svg" alt="menu"></button>
+                        <button class="btnMenu" id="btnMenu">
+                            <img src="img/menu.svg" alt="menu">
+                            <div class="pages" id="btnPages">
+                                <ul>
+                                    <li><a href="index.html"><img src="img/mainImg.svg" alt="mainImg">Главная</a></li>
+                                    <li><a href="ento.html"><img src="img/entoImg.svg" alt="entoImg">Энтомофаги</a></li>
+                                    <li><a href="#"><img src="img/oprImg.svg" alt="oprImg">Опрыскивание</a></li>
+                                    <li><a href="#"><img src="img/mapImg.svg" alt="mapImg">Картография и мониторинг</a></li>
+                                    <li><a href="#"><img src="img/prodImg.svg" alt="prodImg">Каталог продукции</a></li>
+                                    <li><a href="#"><img src="img/newsImg.svg" alt="newsImg">Новости</a></li>
+                                    <li><a href="#"><img src="img/aboutImg.svg" alt="aboutImg">О компании</a></li>
+                                    <li><a href="#"><img src="img/conImg.svg" alt="conImg">Контакты</a></li>
+                                </ul>
+                                <div class="line"></div>
+                                <div class="media">
+                                    <a href="#"><img src="img/whatsApp.svg" alt="whatsApp"></a>
+                                    <a href="#"><img src="img/tgWhite.svg" alt="tgWhite"></a>
+                                    <a href="#"><img src="img/weChat.svg" alt="weChat"></a>
+                                </div>
+                            </div>
+                        </button>
                         <buttpn class="phone"><img src="img/phone.svg" alt="phone"></buttpn>
                     </div>
                 </div>
@@ -125,44 +145,47 @@
             <p class="backText">
                 топ продаж
             </p>
-            <div class="block">
-                <div class="block__item">
-                    <img src="img/AGR22.png" alt="AGR22">
-                    <div class="text">
-                        <h3>Агродрон AGR A22</h3>
-                        <ul>
-                            <li>Бренд: <span>AGR</span></li>
-                            <li>Модель: <span>101-0101</span></li>
-                        </ul>
-                        <p>$15001.27</p>
-                        <button>Добавить в корзину</button>
+            <div class="blHide">
+                <div class="block" id="droneBlock">
+                    <div class="block__item">
+                        <img src="img/AGR22.png" alt="AGR22">
+                        <div class="text">
+                            <h3>Агродрон AGR A22</h3>
+                            <ul>
+                                <li>Бренд: <span>AGR</span></li>
+                                <li>Модель: <span>101-0101</span></li>
+                            </ul>
+                            <p>$15001.27</p>
+                            <button>Добавить в корзину</button>
+                        </div>
                     </div>
-                </div>
-                <div class="block__item">
-                    <img src="img/STS8.png" alt="STS8">
-                    <div class="text">
-                        <h3>Дрон- Картограф STS M8</h3>
-                        <ul>
-                            <li>Бренд: <span>AGR</span></li>
-                            <li>Модель: <span>101-0101</span></li>
-                        </ul>
-                        <p>$18206.30</p>
-                        <button>Добавить в корзину</button>
+                    <div class="block__item">
+                        <img src="img/STS8.png" alt="STS8">
+                        <div class="text">
+                            <h3>Дрон- Картограф STS M8</h3>
+                            <ul>
+                                <li>Бренд: <span>AGR</span></li>
+                                <li>Модель: <span>101-0101</span></li>
+                            </ul>
+                            <p>$18206.30</p>
+                            <button>Добавить в корзину</button>
+                        </div>
                     </div>
-                </div>
-                <div class="block__item">
-                    <img src="img/STS1550.png" alt="STS1550">
-                    <div class="text">
-                        <h3>Дрон - Картограф STS M1550</h3>
-                        <ul>
-                            <li>Бренд: <span>AGR</span></li>
-                            <li>Модель: <span>101-0101</span></li>
-                        </ul>
-                        <p>$13802.86</p>
-                        <button>Добавить в корзину</button>
+                    <div class="block__item">
+                        <img src="img/STS1550.png" alt="STS1550">
+                        <div class="text">
+                            <h3>Дрон - Картограф STS M1550</h3>
+                            <ul>
+                                <li>Бренд: <span>AGR</span></li>
+                                <li>Модель: <span>101-0101</span></li>
+                            </ul>
+                            <p>$13802.86</p>
+                            <button>Добавить в корзину</button>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
     <section class="serv">
@@ -180,8 +203,8 @@
             <div class="textTran">
                 <p>Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить большое преимущество перед вашими конкурентами.</p>
                 <div class="blockView">
-                    <div class="dark"></div>
-                    <div class="arr">
+                    <div class="dark" id="darkArr"></div>
+                    <div class="arr" id="arr">
                         <div class="line"></div>
                         <button><img src="img/arrowBtn.svg" alt="arrowBtn"></button>
                         <div class="line"></div>

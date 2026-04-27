@@ -40,3 +40,65 @@ arrowSlideRight.onclick = function(){
     plusSlide(1);
     showSlide(indexSlide);
 }
+
+
+
+
+
+const btnMenu = document.getElementById("btnMenu"),
+    btnPages = document.getElementById("btnPages");
+
+let isOpen = false;
+btnMenu.onclick = function(){
+    if(isOpen){
+        btnPages.style.display = "none";
+        isOpen = false;
+    }else{
+        btnPages.style.display = "flex";
+        isOpen = true;
+    }
+}
+
+
+
+
+
+const arr = document.getElementById("arr"),
+    darkArr = document.getElementById("darkArr"),
+    buttonArr = document.querySelector("#arr button");
+
+let isArrOpen = false;
+arr.addEventListener('click', ()=>{
+    if(!isArrOpen){
+        arr.style.bottom = "-64px";
+        darkArr.style.display = "none";
+        buttonArr.style.transform="rotate(180deg)";
+        isArrOpen = true;
+    }else{
+        arr.style.bottom = "-44px";
+        darkArr.style.display = "flex";
+        buttonArr.style.transform="rotate(0deg)";
+        isArrOpen = false;
+    }
+})
+
+
+
+// const droneBlock = document.getElementById("droneBlock");
+
+
+// let targetDelta = 0, 
+// targetPos = 0;
+
+// droneBlock.addEventListener("touchstart", (item)=>{
+//     targetPos = item.targetTouches[0].clientX;
+// })
+
+// droneBlock.addEventListener("touchmove", (item)=>{
+//     targetDelta = (targetPos-item.targetTouches[0].clientX);
+//     if(targetDelta > 100){
+//         if(targetDelta )
+//         droneBlock.style.transform = `translateX(${-targetDelta}px)`;
+//     }
+    
+// })

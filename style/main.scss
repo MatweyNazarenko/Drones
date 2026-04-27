@@ -227,6 +227,9 @@ body{
         bottom: -6px;
         z-index: -5;
     }
+    .blHide{
+        overflow: hidden;
+    }
     .block{
         margin-top: 60px;
         display: flex;
@@ -354,6 +357,7 @@ body{
                 background: linear-gradient(0deg, #181818 0%, rgba(24, 24, 24, 0.63) 100%);
             }
             .arr{
+                transition: .3s;
                 position: absolute;
                 bottom: -44px;
                 left: 50%;
@@ -362,12 +366,16 @@ body{
                 align-items: center;
                 justify-content: center;
                 gap: 40px;
+                button{
+                    transition: 0.3s;
+                }
             }
             .line{
                 background-color: #8d8b8b;
                 width: 200px;
                 height: 2px;
             }
+
         }
     }
 }
@@ -385,6 +393,9 @@ body{
         position: absolute;
         right: 0;
         bottom: -23px;
+        img{
+            pointer-events: none;
+        }
     }
     .block{
         margin-top: 70px;
@@ -636,14 +647,10 @@ body{
             display: none;
         }
         .block{
-            overflow: hidden;
             &__item{
                 img{
                     max-width: initial;
                     width: 373px;
-                }
-                &:nth-child(3){
-                    display: none;
                 }
             }
         }
@@ -1250,6 +1257,7 @@ body{
     }
 }
 .use{
+    pointer-events: none;
     padding: 174px 0 75px 0;
     position: relative;
     .block{
