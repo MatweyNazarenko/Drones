@@ -422,6 +422,11 @@ legend {
   box-sizing: content-box;
 }
 
+@media (max-width: 320px) {
+  .container {
+    padding: 0 15px;
+  }
+}
 body {
   background: #181818;
 }
@@ -1267,8 +1272,8 @@ body {
   .title {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 36px;
     line-height: 178%;
+    font-size: 36px;
     color: rgba(255, 255, 255, 0.2);
   }
   .title span {
@@ -2189,5 +2194,245 @@ body {
   }
   .email .bgLine img {
     width: 550px;
+  }
+}
+@media (max-width: 320px) {
+  .zlat .title {
+    min-width: 303px;
+    margin-left: -4px;
+  }
+  .ento {
+    padding: 256px 0 0 0;
+  }
+  .ento .plush {
+    top: 196px;
+    right: 159px;
+    bottom: initial;
+  }
+  .ento__text {
+    padding-left: 0;
+  }
+  .ento__text h1 {
+    font-size: 28px;
+    min-width: 267px;
+  }
+  .ento__text p {
+    font-size: 16px;
+    line-height: 169%;
+    max-width: 267px;
+    margin: 20px 0 36px 0;
+  }
+  .ento__text ul {
+    grid-template-columns: 120px 140px;
+    grid-template-rows: 60px 50px 87px;
+    grid-gap: 24px 23px;
+  }
+  .ento__text ul li {
+    gap: 8px;
+  }
+  .ento__text ul li p {
+    max-width: 102px;
+  }
+  .entoBread {
+    padding: 60px 0 30px 0;
+  }
+  .entoServ .textTran .blockView .dark {
+    top: initial;
+  }
+  .use {
+    padding: 93px 0 60px 0;
+  }
+  .use .block {
+    margin-top: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-bottom: 30px;
+  }
+  .use .block .item {
+    display: none;
+    padding: 30px 38px 33px 30px;
+  }
+  .use .block .item:nth-child(1) {
+    display: block;
+  }
+  .use .block .item .top {
+    gap: 0 16px;
+  }
+  .use .block .item .top h3 {
+    font-size: 18px;
+  }
+  .use .block .item .top img {
+    width: 30px;
+  }
+  .use .block .item .bottom {
+    font-size: 16px;
+    max-width: 218px;
+    margin-top: 12px;
+  }
+  .prob {
+    padding-bottom: 60px;
+  }
+  .prob .title {
+    line-height: initial;
+  }
+  .prob ul {
+    margin-top: 30px;
+    gap: 20px 0;
+  }
+  .prob ul li .num::before {
+    padding: 3px 12px;
+    font-size: 20px;
+  }
+  .prob ul li {
+    gap: 14px;
+  }
+  .prob ul li p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 172%;
+    color: #fff;
+  }
+  .ab {
+    padding-bottom: 60px;
+  }
+  .ab .left .gray {
+    padding: 133px 7px 43px 7px;
+  }
+  .ab .right .gray {
+    padding: 133px 0 43px 7px;
+  }
+  .ab__text {
+    font-size: 16px;
+    max-width: 290px;
+  }
+  .ab__block {
+    margin-top: 40px;
+  }
+  .ab__block .img {
+    margin-bottom: -113px;
+    padding: 16px;
+  }
+  .ab__block .img::before {
+    width: 66px;
+    height: 58px;
+  }
+  .ab__block .img::after {
+    width: 66px;
+    height: 58px;
+  }
+  .ab__block .img img {
+    width: 240px;
+  }
+  .ab__block .gray .texts p {
+    font-size: 14px;
+    line-height: 179%;
+  }
+  .ab__block .gray .vred {
+    margin-top: 32px;
+  }
+  .ab__block .gray .vred h3 {
+    gap: 12px;
+  }
+  .ab__block .gray .vred h3 img {
+    width: 30px;
+  }
+  .ab__block .gray .vred h3 {
+    font-size: 18px;
+    line-height: 172%;
+  }
+  .ab__block .gray .vred ul {
+    gap: 22px 0;
+    justify-content: space-between;
+    max-width: 221px;
+    margin-top: 18px;
+    margin-left: 42px;
+  }
+  .ab__block .gray .vred ul li:nth-child(3) {
+    order: 1;
+  }
+  .work {
+    padding-bottom: 45px;
+  }
+  .work .bgKn {
+    display: none;
+  }
+  .work__block {
+    gap: 50px 0;
+    margin: 44px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .work__block .item:nth-child(5) {
+    order: 1;
+  }
+  .work__block .item:nth-child(1) {
+    display: block;
+  }
+  .work__block .item:nth-child(2) {
+    display: block;
+  }
+  .work__block .itemVis {
+    display: none;
+  }
+  .work__block .itemT {
+    display: none;
+  }
+  .work__block .arr1 {
+    display: none;
+  }
+  .work__block .arr2 {
+    display: none;
+  }
+  .work__block .arr3 {
+    display: none;
+  }
+  .email {
+    padding: 56px 0 60px 0;
+    overflow-x: hidden;
+  }
+  .email__block {
+    width: 110%;
+    padding: 13px 33px 61px 26px;
+    margin-left: -15px;
+  }
+  .email__block p {
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 169%;
+    max-width: 240px;
+  }
+  .email__block form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .email__block form .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  .email__block form .inputs .input input {
+    width: 258px;
+  }
+  .email__block form button {
+    padding: 10px 99px 14px 99px;
+    margin-top: 30px;
+  }
+  .email__block a {
+    margin-left: 4px;
+  }
+  .email .grDr {
+    right: 0px;
+    top: 0;
+  }
+  .email .grDr img {
+    width: 158px;
+  }
+  .email .bgLine {
+    top: 0;
+    right: 0;
+  }
+  .email .bgLine img {
+    width: 270px;
   }
 }/*# sourceMappingURL=main.css.map */
