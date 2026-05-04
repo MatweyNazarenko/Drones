@@ -102,3 +102,10 @@ arr.addEventListener('click', ()=>{
 //     }
     
 // })
+
+
+const textMin = document.getElementById("textMin");
+
+if(window.screen.width <= 320){
+    textMin.textContent = "3D-модель";
+}
