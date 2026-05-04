@@ -1,4 +1,24 @@
 /* Reset and base styles  */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+select {
+  -webkit-appearance: none; /* Safari и Chrome */
+  -moz-appearance: none;    /* Firefox */
+  appearance: none;         /* Современные браузеры */
+}
+
+/* Для Internet Explorer */
+select::-ms-expand {
+  display: none;
+}
 * {
 	padding: 0px;
 	margin: 0px;
