@@ -4217,6 +4217,10 @@ body {
   padding: 40px 0 20px 0;
 }
 
+.catalog {
+  position: relative;
+  padding-bottom: 110px;
+}
 .catalog__block {
   margin-top: 16px;
   display: flex;
@@ -4225,10 +4229,16 @@ body {
 .catalog__block .category {
   display: flex;
   flex-direction: column;
-  gap: 37px;
   align-items: start;
 }
-.catalog__block .category h3 {
+.catalog__block .category .h3 {
+  list-style: none;
+}
+.catalog__block .category .h3::marker {
+  display: none;
+}
+.catalog__block .category .h3 {
+  pointer-events: none;
   padding-bottom: 14px;
   font-family: var(--font-family);
   font-weight: 400;
@@ -4239,10 +4249,13 @@ body {
   border-bottom: 1px solid #464646;
 }
 .catalog__block .category .selects {
+  margin-top: 37px;
   display: flex;
   flex-direction: column;
   gap: 11px;
   align-items: start;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #464646;
 }
 .catalog__block .category .selects button {
   gap: 14px;
@@ -4253,6 +4266,40 @@ body {
   font-size: 18px;
   line-height: 100%;
   color: #fff;
+}
+.catalog__block .category .selects details:open summary {
+  margin-bottom: 20px;
+}
+.catalog__block .category .selects details .data {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.catalog__block .category .selects details summary .line {
+  transition: 0.5s;
+  margin-bottom: -12px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color: #fff;
+}
+.catalog__block .category .selects details summary {
+  gap: 14px;
+  display: flex;
+  align-items: end;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #fff;
+}
+.catalog__block .category .selects details button {
+  line-height: 156%;
+  text-align: start;
+  max-width: 240px;
+  justify-content: start;
+  margin-left: 44px;
 }
 .catalog__block .category .cost {
   padding-top: 40px;
@@ -4354,8 +4401,9 @@ body {
   gap: 70px;
 }
 .catalog__block .content {
+  margin-top: 49px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px 10px;
 }
@@ -4427,4 +4475,207 @@ body {
   line-height: 100%;
   color: #fff;
   gap: 16px;
+}
+.catalog__block .more img {
+  animation-play-state: running;
+  animation-name: rotateLoad;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.catalog__block .more:hover img {
+  animation-play-state: paused;
+}
+.catalog__textBack {
+  transform: rotate(90deg);
+  left: initial;
+  right: -115px;
+  bottom: 740px;
+}
+.catalog__bigLine {
+  position: absolute;
+  bottom: -100px;
+  left: 410px;
+  z-index: -2;
+}
+
+@keyframes rotateLoad {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 768px) {
+  .cat {
+    padding: 51px 0 32px 0;
+  }
+  .cat__text {
+    gap: 61px;
+  }
+  .cat__text h1 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 133%;
+    color: #fff;
+  }
+  .cat__text ul {
+    max-width: 386px;
+    max-height: 122px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 36px;
+    grid-auto-flow: column;
+  }
+  .cat__text ul li {
+    gap: 12px;
+  }
+  .cat__text ul li img {
+    width: 30px;
+  }
+  .cat__text ul li {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #fff;
+  }
+  .cat__text .lines {
+    left: -16px;
+    bottom: 158px;
+    gap: 18px;
+  }
+  .cat__text .lines img:nth-child(1) {
+    width: 346px;
+  }
+  .cat__text .lines img:nth-child(2) {
+    margin-top: -9px;
+    width: 35px;
+  }
+  .catBread {
+    padding: 40px 0;
+  }
+  .catalog {
+    padding-bottom: 80px;
+  }
+  .catalog__block {
+    flex-direction: column;
+  }
+  .catalog__block .category {
+    position: relative;
+  }
+  .catalog__block .category:open .h3 {
+    color: #02e502;
+    border-bottom: 1px solid #02e502;
+  }
+  .catalog__block .category:open .h3:after {
+    border-bottom: 2px solid #02e502;
+    border-right: 2px solid #02e502;
+    transform: rotate(-134deg);
+    top: 12px;
+  }
+  .catalog__block .category .h3 {
+    position: relative;
+    pointer-events: all;
+    transition: 0.5s;
+  }
+  .catalog__block .category .h3::after {
+    transition: transform 0.2s;
+    top: 6px;
+    right: -22px;
+    transform: rotate(45deg);
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-bottom: 2px solid #fff;
+    border-radius: 1px;
+    border-right: 2px solid #fff;
+  }
+  .catalog__block .category .mat {
+    top: 55px;
+    position: absolute;
+    background: rgba(24, 24, 24, 0.9);
+    padding: 30px 30px 69px 30px;
+  }
+  .catalog__block .content {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .catalog__block .content .item:nth-child(5) {
+    display: none;
+  }
+  .catalog__block .content .item:nth-child(6) {
+    display: none;
+  }
+  .catalog__bigLine {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .cat {
+    padding: 257px 0 0 0;
+  }
+  .cat::after {
+    width: 101%;
+  }
+  .cat__text {
+    gap: 65px;
+  }
+  .cat__text .lines {
+    gap: 14px;
+    left: 4px;
+    bottom: 109px;
+  }
+  .cat__text .lines img:nth-child(1) {
+    width: 253px;
+  }
+  .cat__text .lines img:nth-child(2) {
+    width: 34px;
+    margin-top: -13px;
+  }
+  .cat__text h1 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;
+  }
+  .cat__text ul {
+    gap: 18px 22px;
+    max-width: 289px;
+    max-height: 91px;
+  }
+  .cat__text ul li img {
+    width: 20px;
+  }
+  .cat__text ul li {
+    gap: 8px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #fff;
+  }
+  .catBread {
+    padding: 60px 0 30px 0;
+  }
+  .catalog {
+    margin-bottom: 60px;
+  }
+  .catalog__block .category .mat {
+    background: rgb(24, 24, 24);
+  }
+  .catalog__block .content .item {
+    padding: 30px 18px 69px 18px;
+  }
+  .catalog__block .content .item .text button {
+    padding: 15px 28px 19px 28px;
+  }
+  .catalog__block .content .item:nth-child(4) {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
